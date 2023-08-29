@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Imagem Fundo</title>
+    <title>Resolvendo o problema de rolagem do conteúdo.</title>
     <style>
-        body{
+         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(images/wallpaper002.jpg);
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /* shorthand c.i.p.re.s.a- background
+                color > image > position > repeat > size* > attachment 
+                *size não funciona em shorthand
+                * c.i.p.r.a
+                */
+            background: black url('images/wallpaper002.jpg') center center  no-repeat fixed;
             background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border-radius: 10px;
@@ -24,6 +33,7 @@
         h1 {
             text-align: center;
         }
+
     </style>
 </head>
 <body>
