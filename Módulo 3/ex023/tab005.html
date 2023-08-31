@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            position: relative;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        thead {
+            position: sticky;
+            top: 0;
+        }
+        thead, tfoot {
+            background-color: rgba(0, 0, 0, 0.849);
+            color: white;
+        }
+        .num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: darkgray;
+        }
+        .coluna-pop {
+            width: 100px;
+        }
+        col.vermelho {
+            background-color: red;
+        }
+        col.marrom {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das UF</caption>
+        <colgroup>
+            <col class="vermelho">
+            <col class="marrom">
+            <!--Dá para usar 'span:" "' dentro de col para definir quantas colunas a configuração vai ocupar-->
+        </colgroup>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" class="coluna-pop">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>246 551 518</strong></td>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae debitis error similique molestias, rem odio distinctio repudiandae alias cumque ut quod eaque omnis ipsum! Perferendis sequi harum repellat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in aliquam totam, nam quia obcaecati voluptas dolorem a laudantium impedit distinctio quasi eveniet repellat sint ducimus esse voluptate laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam. Excepturi expedita suscipit rerum eius dicta pariatur incidunt ipsa quibusdam laudantium cum aliquid iste et odit non, dolor ex. In. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium, nulla dolor laboriosam, odit voluptate exercitationem ex beatae voluptates necessitatibus quod nesciunt dicta recusandae est at asperiores explicabo accusamus cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur expedita nobis saepe veritatis quibusdam consectetur soluta similique non, modi quaerat commodi distinctio ratione odit consequuntur. Similique ipsum iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat obcaecati eligendi explicabo. Possimus doloremque cupiditate autem rem accusamus. Pariatur repellendus exercitationem sit vel, consectetur repudiandae id temporibus voluptate eveniet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae debitis error similique molestias, rem odio distinctio repudiandae alias cumque ut quod eaque omnis ipsum! Perferendis sequi harum repellat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in aliquam totam, nam quia obcaecati voluptas dolorem a laudantium impedit distinctio quasi eveniet repellat sint ducimus esse voluptate laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam. Excepturi expedita suscipit rerum eius dicta pariatur incidunt ipsa quibusdam laudantium cum aliquid iste et odit non, dolor ex. In. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium, nulla dolor laboriosam, odit voluptate exercitationem ex beatae voluptates necessitatibus quod nesciunt dicta recusandae est at asperiores explicabo accusamus cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur expedita nobis saepe veritatis quibusdam consectetur soluta similique non, modi quaerat commodi distinctio ratione odit consequuntur. Similique ipsum iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat obcaecati eligendi explicabo. Possimus doloremque cupiditate autem rem accusamus. Pariatur repellendus exercitationem sit vel, consectetur repudiandae id temporibus voluptate eveniet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae debitis error similique molestias, rem odio distinctio repudiandae alias cumque ut quod eaque omnis ipsum! Perferendis sequi harum repellat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in aliquam totam, nam quia obcaecati voluptas dolorem a laudantium impedit distinctio quasi eveniet repellat sint ducimus esse voluptate laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam. Excepturi expedita suscipit rerum eius dicta pariatur incidunt ipsa quibusdam laudantium cum aliquid iste et odit non, dolor ex. In. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium, nulla dolor laboriosam, odit voluptate exercitationem ex beatae voluptates necessitatibus quod nesciunt dicta recusandae est at asperiores explicabo accusamus cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur expedita nobis saepe veritatis quibusdam consectetur soluta similique non, modi quaerat commodi distinctio ratione odit consequuntur. Similique ipsum iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat obcaecati eligendi explicabo. Possimus doloremque cupiditate autem rem accusamus. Pariatur repellendus exercitationem sit vel, consectetur repudiandae id temporibus voluptate eveniet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae debitis error similique molestias, rem odio distinctio repudiandae alias cumque ut quod eaque omnis ipsum! Perferendis sequi harum repellat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in aliquam totam, nam quia obcaecati voluptas dolorem a laudantium impedit distinctio quasi eveniet repellat sint ducimus esse voluptate laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam. Excepturi expedita suscipit rerum eius dicta pariatur incidunt ipsa quibusdam laudantium cum aliquid iste et odit non, dolor ex. In. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium, nulla dolor laboriosam, odit voluptate exercitationem ex beatae voluptates necessitatibus quod nesciunt dicta recusandae est at asperiores explicabo accusamus cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur expedita nobis saepe veritatis quibusdam consectetur soluta similique non, modi quaerat commodi distinctio ratione odit consequuntur. Similique ipsum iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat obcaecati eligendi explicabo. Possimus doloremque cupiditate autem rem accusamus. Pariatur repellendus exercitationem sit vel, consectetur repudiandae id temporibus voluptate eveniet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae debitis error similique molestias, rem odio distinctio repudiandae alias cumque ut quod eaque omnis ipsum! Perferendis sequi harum repellat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in aliquam totam, nam quia obcaecati voluptas dolorem a laudantium impedit distinctio quasi eveniet repellat sint ducimus esse voluptate laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam. Excepturi expedita suscipit rerum eius dicta pariatur incidunt ipsa quibusdam laudantium cum aliquid iste et odit non, dolor ex. In. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium, nulla dolor laboriosam, odit voluptate exercitationem ex beatae voluptates necessitatibus quod nesciunt dicta recusandae est at asperiores explicabo accusamus cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur expedita nobis saepe veritatis quibusdam consectetur soluta similique non, modi quaerat commodi distinctio ratione odit consequuntur. Similique ipsum iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat obcaecati eligendi explicabo. Possimus doloremque cupiditate autem rem accusamus. Pariatur repellendus exercitationem sit vel, consectetur repudiandae id temporibus voluptate eveniet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae debitis error similique molestias, rem odio distinctio repudiandae alias cumque ut quod eaque omnis ipsum! Perferendis sequi harum repellat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in aliquam totam, nam quia obcaecati voluptas dolorem a laudantium impedit distinctio quasi eveniet repellat sint ducimus esse voluptate laborum maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam. Excepturi expedita suscipit rerum eius dicta pariatur incidunt ipsa quibusdam laudantium cum aliquid iste et odit non, dolor ex. In. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium, nulla dolor laboriosam, odit voluptate exercitationem ex beatae voluptates necessitatibus quod nesciunt dicta recusandae est at asperiores explicabo accusamus cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur expedita nobis saepe veritatis quibusdam consectetur soluta similique non, modi quaerat commodi distinctio ratione odit consequuntur. Similique ipsum iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat obcaecati eligendi explicabo. Possimus doloremque cupiditate autem rem accusamus. Pariatur repellendus exercitationem sit vel, consectetur repudiandae id temporibus voluptate eveniet.</p>
+</body>
+</html>
