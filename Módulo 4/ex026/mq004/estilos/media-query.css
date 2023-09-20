@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*versão para as demais mídias*/
+
+/*
+    typical devide breakpoints (até 2023):
+
+    Pequenas telas: até 600px;
+    Celular: 600px a 768px;
+    Tablet: 768px a 992px;
+    Desktop: 992px a 1200px;
+    Grandes telas: acima de 1200px;
+
+    no style.css media="all" como estamos trabalhando com mobile first, as configurações gerais estarão nele, enquanto as configurações para as demais telas estarão neste arquivo.
+
+*/
+
+
+/*para impressão*/
+@media print {
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1 {
+        color: black;
+    }
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: "Essa impressão foi feita pelo site testemediaquery.com";
+    }
+}
+
+/*para tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/*para desktops*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main {
+        width: 800px;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+/*para telas grandes*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 1000px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
