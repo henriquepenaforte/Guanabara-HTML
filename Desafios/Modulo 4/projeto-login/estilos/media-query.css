@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* typical devide breakpoints (até 2023):
+
+    Pequenas telas: até 600px;
+    Celular: 600px a 768px;
+    Tablet: 768px a 992px;
+    Desktop: 992px a 1200px;
+    Grandes telas: acima de 1200px;
+*/
+
+/* tablet: */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+    #login {
+        width: 75vw;
+    }
+    #login > #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    #login > #formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+
+/* pc e grandes telas: */
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+    #login {
+        width: 990px;
+    }
+    #login > #imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    #login > #formulario {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}
